@@ -1,0 +1,36 @@
+/* Styles go here */
+*{
+  font-family: arial;
+}
+.wrapper {
+  background: #00adff;
+  display: grid;
+  grid-template-areas: 'header header header' 'menu main main' 'footer footer footer';
+  grid-gap: 10px;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #c1ebff;
+}
+
+header {
+  grid-area: header;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+aside {
+  grid-area: menu;
+  border-right: 1px solid #ccc;
+  padding: 50px 0;
+}
+
+main {
+  grid-area: main;
+  padding: 50px 0;
+}
+
+footer {
+  grid-area: footer;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
